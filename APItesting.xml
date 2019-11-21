@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">  
+<suite name="API automation">  
+<listeners>
+		<listener class-name="ExtendReport.ExtentReporterNG" />
+	</listeners>
+
+
+	<test name="Free CRM App Test Cases">
+		<classes>
+			<class name="Request.TC002_POST_Request"></class>
+			
+
+		</classes>
+	</test> 
+</suite> <!-- Suite -->  
