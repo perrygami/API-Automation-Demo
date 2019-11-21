@@ -1,82 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="7" passed="7" failed="0" skipped="0">
+<testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-15T11:43:21Z" name="Default suite" finished-at="2019-11-15T11:43:28Z" duration-ms="6640">
+  <suite started-at="2019-11-21T11:21:48Z" name="Default suite" finished-at="2019-11-21T11:21:50Z" duration-ms="2459">
     <groups>
     </groups>
-    <test started-at="2019-11-15T11:43:21Z" name="Default test" finished-at="2019-11-15T11:43:28Z" duration-ms="6640">
+    <test started-at="2019-11-21T11:21:48Z" name="Default test" finished-at="2019-11-21T11:21:50Z" duration-ms="2459">
       <class name="Request.TC002_POST_Request">
-        <test-method signature="Registration(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:22Z" name="Registration" data-provider="getTestData" finished-at="2019-11-15T11:43:23Z" duration-ms="1977" status="PASS">
-          <params>
-            <param index="0">
-              <value is-null="true"/>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Registration -->
-        <test-method signature="Registration(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:23Z" name="Registration" data-provider="getTestData" finished-at="2019-11-15T11:43:24Z" duration-ms="542" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[roma]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[roma]]>
-              </value>
-            </param>
-            <param index="2">
-              <value is-null="true"/>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Registration -->
-        <test-method signature="Registration(java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:24Z" name="Registration" data-provider="getTestData" finished-at="2019-11-15T11:43:25Z" duration-ms="571" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[roma]]>
-              </value>
-            </param>
-            <param index="1">
-              <value>
-                <![CDATA[roma@mailinator.com]]>
-              </value>
-            </param>
-            <param index="2">
-              <value>
-                <![CDATA[skfksldfmd]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Registration -->
-        <test-method signature="Login()[pri:1, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:25Z" name="Login" finished-at="2019-11-15T11:43:26Z" duration-ms="914" status="PASS">
+        <test-method signature="Login()[pri:1, instance:Request.TC002_POST_Request@13fd2ccd]" started-at="2019-11-21T11:21:48Z" name="Login" finished-at="2019-11-21T11:21:50Z" duration-ms="2338" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Changepassword()[pri:2, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:26Z" name="Changepassword" finished-at="2019-11-15T11:43:27Z" duration-ms="1421" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- Changepassword -->
-        <test-method signature="MyProfile()[pri:3, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:27Z" name="MyProfile" finished-at="2019-11-15T11:43:27Z" duration-ms="554" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- MyProfile -->
-        <test-method signature="Upload_Profile_Picture()[pri:4, instance:Request.TC002_POST_Request@52b1beb6]" started-at="2019-11-15T11:43:27Z" name="Upload_Profile_Picture" finished-at="2019-11-15T11:43:28Z" duration-ms="107" status="PASS">
+        <test-method signature="Upload_Profile_Picture()[pri:4, instance:Request.TC002_POST_Request@13fd2ccd]" started-at="2019-11-21T11:21:50Z" name="Upload_Profile_Picture" finished-at="2019-11-21T11:21:50Z" duration-ms="105" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Upload_Profile_Picture -->

@@ -24,7 +24,7 @@ public class TC002_POST_Request extends TestUtil {
 	TestUtil testutil;
 	TC002_POST_Request tc_post_req;
 	String sheetName = "sheet1";
-	//String URL="http://simform.solutions:40210/api/v1/user";
+	// String URL="http://simform.solutions:40210/api/v1/user";
 
 	@DataProvider
 	public Object[][] getTestData() throws InvalidFormatException {
@@ -32,39 +32,39 @@ public class TC002_POST_Request extends TestUtil {
 		return data;
 	}
 
-	@Test(priority = 0, dataProvider = "getTestData")
-	public void Registration(String name, String email, String password) {
-
-		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
-
-		// Request Object
-		RequestSpecification httpReq = RestAssured.given();
-
-		// Response Object
-
-		// Body parameters sending with post request
-		JSONObject requestParams = new JSONObject();
-		// System.out.println(title);
-		requestParams.put("name", name);
-		requestParams.put("email", email);
-		requestParams.put("password", password);
-
-		httpReq.header("Content-Type", "application/json");
-
-		httpReq.body(requestParams.toJSONString());
-
-		Response response = httpReq.request(Method.POST, "/create");
-
-		String ResponseBody = response.getBody().asString();
-		System.out.println(ResponseBody);
-
-		int statuscode = response.getStatusCode();
-		System.out.println("Status code is" + statuscode);
-
-		response.jsonPath().get("Successcode");
-
-	}
-
+//	@Test(priority = 0, dataProvider = "getTestData")
+//	public void Registration(String name, String email, String password) {
+//
+//		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
+//
+//		// Request Object
+//		RequestSpecification httpReq = RestAssured.given();
+//
+//		// Response Object
+//
+//		// Body parameters sending with post request
+//		JSONObject requestParams = new JSONObject();
+//		// System.out.println(title);
+//		requestParams.put("name", name);
+//		requestParams.put("email", email);
+//		requestParams.put("password", password);
+//
+//		httpReq.header("Content-Type", "application/json");
+//
+//		httpReq.body(requestParams.toJSONString());
+//
+//		Response response = httpReq.request(Method.POST, "/create");
+//
+//		String ResponseBody = response.getBody().asString();
+//		System.out.println(ResponseBody);
+//
+//		int statuscode = response.getStatusCode();
+//		System.out.println("Status code is" + statuscode);
+//
+//		response.jsonPath().get("Successcode");
+//
+//	}
+//
 	@Test(priority = 1)
 	public void Login() {
 
@@ -100,61 +100,62 @@ public class TC002_POST_Request extends TestUtil {
 
 	}
 
-	@Test(priority = 2)
-	public void Changepassword() {
-
-		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
-
-		// Request Object
-		RequestSpecification httpReq = RestAssured.given();
-
-		// Response Object
-
-		// Body parameters sending with post request
-		JSONObject requestParams = new JSONObject();
-
-		// param for login
-
-		requestParams.put("password", "testuser.123");
-
-		requestParams.put("newPassword", "testuser.123");
-
-		httpReq.header("Content-Type", "application/json");
-
-		httpReq.header("x-access-token", tokenS);
-
-		httpReq.body(requestParams.toJSONString());
-
-		Response response = httpReq.request(Method.POST, "/change-password");
-
-		String ResponseBody = response.getBody().asString();
-		System.out.println(ResponseBody);
-
-	}
-	@Test(priority = 3)
-	public void MyProfile() {
-
-		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
-
-		// Request Object
-		RequestSpecification httpReq = RestAssured.given();
-
-		// Response Object
-
-		// Body parameters sending with post request
-		JSONObject requestParams = new JSONObject();
-
-		httpReq.header("Content-Type", "application/json");
-
-		httpReq.header("x-access-token", tokenS);
-		httpReq.body(requestParams.toJSONString());
-
-		Response response = httpReq.request(Method.GET, "/my-profile");
-
-		String ResponseBody = response.getBody().asString();
-		System.out.println(ResponseBody);
-
-	}
+//	@Test(priority = 2)
+//	public void Changepassword() {
+//
+//		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
+//
+//		// Request Object
+//		RequestSpecification httpReq = RestAssured.given();
+//
+//		// Response Object
+//
+//		// Body parameters sending with post request
+//		JSONObject requestParams = new JSONObject();
+//
+//		// param for login
+//
+//		requestParams.put("password", "testuser.123");
+//
+//		requestParams.put("newPassword", "testuser.123");
+//
+//		httpReq.header("Content-Type", "application/json");
+//
+//		httpReq.header("x-access-token", tokenS);
+//
+//		httpReq.body(requestParams.toJSONString());
+//
+//		Response response = httpReq.request(Method.POST, "/change-password");
+//
+//		String ResponseBody = response.getBody().asString();
+//		System.out.println(ResponseBody);
+//
+//	}
+//
+//	@Test(priority = 3)
+//	public void MyProfile() {
+//
+//		RestAssured.baseURI = "http://simform.solutions:40210/api/v1/user";
+//
+//		// Request Object
+//		RequestSpecification httpReq = RestAssured.given();
+//
+//		// Response Object
+//
+//		// Body parameters sending with post request
+//		JSONObject requestParams = new JSONObject();
+//
+//		httpReq.header("Content-Type", "application/json");
+//
+//		httpReq.header("x-access-token", tokenS);
+//		httpReq.body(requestParams.toJSONString());
+//
+//		Response response = httpReq.request(Method.GET, "/my-profile");
+//
+//		String ResponseBody = response.getBody().asString();
+//		System.out.println(ResponseBody);
+//
+//	}
 
 	@Test(priority = 4)
 	public void Upload_Profile_Picture() {
@@ -169,7 +170,9 @@ public class TC002_POST_Request extends TestUtil {
 		// Body parameters sending with post request
 		JSONObject requestParams = new JSONObject();
 
-		httpReq.multiPart("image", new File("/Users/perry.gami/Desktop/ketty.jpg"));
+		String appPath = System.getProperty("user.dir") + "/Test_yourself.png";
+
+		httpReq.multiPart("image", new File(appPath));
 		httpReq.header("Content-Type", "multipart/form-data");
 
 		httpReq.header("x-access-token", tokenS);

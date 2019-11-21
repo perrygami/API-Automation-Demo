@@ -5,7 +5,7 @@
     <classes>
       <class name="Request.TC002_POST_Request">
         <methods>
-          <include name="Changepassword"/>
+          <include name="Upload_Profile_Picture"/>
         </methods>
       </class> <!-- Request.TC002_POST_Request -->
     </classes>
