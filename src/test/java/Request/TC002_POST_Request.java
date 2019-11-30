@@ -172,9 +172,10 @@ public class TC002_POST_Request extends TestUtil {
 
 		String appPath = System.getProperty("user.dir") + "/Test_yourself.png";
 
-		httpReq.multiPart("image", new File(appPath));
+		//httpReq.multiPart("image", new File(appPath));
+		
+		requestParams.put("image", appPath);
 		httpReq.header("Content-Type", "multipart/form-data");
-
 		httpReq.header("x-access-token", tokenS);
 		httpReq.body(requestParams.toJSONString());
 
