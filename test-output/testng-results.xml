@@ -2,16 +2,16 @@
 <testng-results ignored="0" total="2" passed="1" failed="1" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2019-11-30T07:55:41Z" name="Default suite" finished-at="2019-11-30T07:55:44Z" duration-ms="2130">
+  <suite started-at="2019-12-02T07:22:17Z" name="FREE CRM Application Test Automation Test Suite" finished-at="2019-12-02T07:22:19Z" duration-ms="2301">
     <groups>
     </groups>
-    <test started-at="2019-11-30T07:55:41Z" name="Default test" finished-at="2019-11-30T07:55:44Z" duration-ms="2130">
+    <test started-at="2019-12-02T07:22:17Z" name="API automation Test Cases" finished-at="2019-12-02T07:22:19Z" duration-ms="2301">
       <class name="Request.TC002_POST_Request">
-        <test-method signature="Login()[pri:1, instance:Request.TC002_POST_Request@13fd2ccd]" started-at="2019-11-30T07:55:41Z" name="Login" finished-at="2019-11-30T07:55:43Z" duration-ms="2091" status="PASS">
+        <test-method signature="Login()[pri:1, instance:Request.TC002_POST_Request@72e5a8e]" started-at="2019-12-02T07:22:17Z" name="Login" finished-at="2019-12-02T07:22:19Z" duration-ms="2265" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- Login -->
-        <test-method signature="Upload_Profile_Picture()[pri:4, instance:Request.TC002_POST_Request@13fd2ccd]" started-at="2019-11-30T07:55:43Z" name="Upload_Profile_Picture" finished-at="2019-11-30T07:55:44Z" duration-ms="16" status="FAIL">
+        <test-method signature="Upload_Profile_Picture()[pri:4, instance:Request.TC002_POST_Request@72e5a8e]" started-at="2019-12-02T07:22:19Z" name="Upload_Profile_Picture" finished-at="2019-12-02T07:22:19Z" duration-ms="16" status="FAIL">
           <exception class="java.lang.IllegalArgumentException">
             <message>
               <![CDATA[Don't know how to encode {"image":"\/Users\/perry.gami\/Documents\/GitHub\/Cucumber\/API-Automation-Demo\/Test_yourself.png"} as a byte stream.
@@ -128,6 +128,6 @@ at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
           </reporter-output>
         </test-method> <!-- Upload_Profile_Picture -->
       </class> <!-- Request.TC002_POST_Request -->
-    </test> <!-- Default test -->
-  </suite> <!-- Default suite -->
+    </test> <!-- API automation Test Cases -->
+  </suite> <!-- FREE CRM Application Test Automation Test Suite -->
 </testng-results>

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="FREE CRM Application Test Automation Test Suite">
+<listeners>
+		<listener class-name="ExtendReport.ExtentReporterNG" />
+	</listeners>
+ 
+	<test name="API automation Test Cases">
+		<classes>
+			<class name="Request.TC002_POST_Request"></class>
+			
+
+		</classes>
+	</test>
+</suite>
