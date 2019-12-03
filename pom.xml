@@ -65,7 +65,6 @@
 			<groupId>org.testng</groupId>
 			<artifactId>testng</artifactId>
 			<version>6.8</version>
-			<scope>test</scope>
 		</dependency>
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
@@ -118,11 +117,11 @@
 			<scope>provided</scope>
 		</dependency>
 		<dependency>
-			<groupId>org.testng</groupId>
-			<artifactId>testng</artifactId>
-			<version>6.8</version>
-			<scope>test</scope>
-		</dependency>
+        <groupId>org.testng</groupId>
+        <artifactId>testng</artifactId>
+        <version>6.1.1</version>
+        <scope>compile</scope>
+    </dependency>
 		<dependency>
 			<groupId>com.relevantcodes</groupId>
 			<artifactId>extentreports</artifactId>
