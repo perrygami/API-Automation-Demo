@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="Failed suite [FREE CRM Application Test Automation Test Suite]" guice-stage="DEVELOPMENT">
+<suite name="Failed suite [API automation]" guice-stage="DEVELOPMENT">
   <listeners>
     <listener class-name="ExtendReport.ExtentReporterNG"/>
   </listeners>
@@ -13,4 +13,4 @@
       </class> <!-- Request.TC002_POST_Request -->
     </classes>
   </test> <!-- API automation Test Cases(failed) -->
-</suite> <!-- Failed suite [FREE CRM Application Test Automation Test Suite] -->
+</suite> <!-- Failed suite [API automation] -->

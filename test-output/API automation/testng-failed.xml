@@ -4,15 +4,13 @@
   <listeners>
     <listener class-name="ExtendReport.ExtentReporterNG"/>
   </listeners>
-  <test thread-count="5" name="Free CRM App Test Cases(failed)">
+  <test thread-count="5" name="API automation Test Cases(failed)">
     <classes>
       <class name="Request.TC002_POST_Request">
         <methods>
-          <include name="Changepassword"/>
-          <include name="Login"/>
-          <include name="MyProfile"/>
+          <include name="Upload_Profile_Picture"/>
         </methods>
       </class> <!-- Request.TC002_POST_Request -->
     </classes>
-  </test> <!-- Free CRM App Test Cases(failed) -->
+  </test> <!-- API automation Test Cases(failed) -->
 </suite> <!-- Failed suite [API automation] -->
